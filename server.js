@@ -13,7 +13,8 @@ app.use(function(req, res, next) {
 });
 
 
-app.get('/hello', function(req, res){
-    res.send('hello world');
-});
+require('./controllers/quiz.controller.server')(app);
+require('./controllers/question.controller.server')(app);
 app.listen(3000);
+
+console.log('server started!');
