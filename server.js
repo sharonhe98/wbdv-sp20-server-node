@@ -1,8 +1,9 @@
 var express = require('express');
 var app = express();
 
-const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/whiteboard-cs56100-sp20',
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://assignment9:assignment9@ds155626.mlab.com:55626/heroku_zpwtnc11',
     { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.use(function(req, res, next) {
